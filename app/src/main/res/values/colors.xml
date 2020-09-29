@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#F44336</color>
+    <color name="colorPrimaryDark">#BB6B6B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="gray">#E2E2E2</color>
+    <color name="gray2">#F5F3F3</color>
+    <color name="write">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="color1">#45F44336</color>
+    <color name="color2">#806161</color>
+    <color name="color3">#FFF59D</color>
+
+    <color name="TextColor1">#000000</color>
+    <color name="TextColor2">#FF5252</color>
+    <color name="TextColor3">#FF80AB</color>
+    <color name="TextColor4">#8C9EFF</color>
+    <color name="TextColor5">#A7FFEB</color>
+    <color name="TextColor6">#FF6E40</color>
+    <color name="AlarmItemColor">#BBDEFB</color>
+    <color name="TopItemColor">#EF9A9A</color>
+
+</resources>

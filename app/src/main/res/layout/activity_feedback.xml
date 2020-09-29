@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:zhy="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.activity.FeedbackActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary"
+        android:id="@+id/FeedBackActivityTitle">
+
+        <TextView
+            android:id="@+id/tv_header_centerText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="反馈留言"
+            android:textStyle=""
+            android:textColor="@color/write"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:text="提交"
+            android:id="@+id/tv_header_right"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="9dp"
+            android:visibility="gone"
+            android:layout_alignParentRight="true"
+            android:gravity="center"/>
+
+        <LinearLayout
+            android:id="@+id/lin_header_back2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            tools:ignore="RtlHardcoded">
+
+            <ImageView
+                android:background="@drawable/buttonclickstyle_backup"
+                android:id="@+id/tv_header_back"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/ic_backup"
+                android:layout_marginLeft="5dp" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="15sp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <com.yxy.memo.weight.ReboundScrollView
+        android:layout_below="@+id/FeedBackActivityTitle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/SecondRelative"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/topLinear"
+                    android:background="@color/gray"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_margin="10dp"
+                        android:text="选择反馈类型"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/write"
+                    android:layout_below="@+id/topLinear"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_margin="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <com.zhy.view.flowlayout.TagFlowLayout
+                            android:id="@+id/id_flowlayout"
+                            zhy:max_select="-1"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="20dp"/>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/LinearLayout_edit"
+                android:layout_below="@+id/SecondRelative"
+                android:orientation="vertical"
+                android:layout_marginTop="6dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:background="@color/write"
+                    android:id="@+id/et_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:padding="8dp"
+                    android:gravity="left|top"
+                    android:hint="说点什么吧~我们会做得更好~"
+                    android:textSize="13sp"
+                    android:maxLength="1000"/>
+
+                <TextView
+                    android:layout_gravity="right"
+                    android:id="@+id/RemainText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:text="0/1000"
+                    tools:ignore="RtlHardcoded" />
+
+            </LinearLayout>
+
+            <Button
+                android:text="提交"
+                android:id="@+id/bt_save"
+                android:layout_below="@+id/LinearLayout_edit"
+                android:background="@drawable/buttonclickstyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="6dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"/>
+
+        </RelativeLayout>
+
+    </com.yxy.memo.weight.ReboundScrollView>
+
+</RelativeLayout>
